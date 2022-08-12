@@ -1,0 +1,646 @@
+.container,.footer{width:100%}
+.wrapper,.footer,.footer .promo,.footer .sitemap{overflow:hidden;zoom:1}
+.nav-plinks .cwbutton { display: none; visibility: hidden; }
+/*---------------OLP (online learning pack) Styles-------------*/
+#olpnew{position:relative;background:url(http://www.routledge.com/textbooks/globalImages/olp.png) no-repeat scroll;height:131px;width:500px;margin:20px 0}
+#olpnewblack{position:relative;background:url(http://www.routledge.com/textbooks/globalImages/olp-black.png) no-repeat scroll;height:131px;width:500px;margin:20px 0}
+#olpnew h3,#olpnewblack h3{text-indent:-10000px;background:none}
+#olpnew a.commoncart,#olpnewblack a.commoncart{height:29px;left:368px;position:absolute;text-indent:-10000px;top:27px;width:85px}
+#olpnew a.scorm,#olpnewblack a.scorm{height:29px;left:368px;position:absolute;text-indent:-10000px;top:71px;width:85px}
+#olpnew a.olpmoreinfo,#olpnewblack a.olpmoreinfo{position:absolute;top:90px;width:83px;height:25px;left:233px;text-indent:-10000px}
+
+
+/*--------------Layout------------------*/
+
+html { font-size: 62.5%; } 
+
+body { 
+	color:#111;
+	background: #D2D9B1;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 14px; font-size: 1.4rem;
+ }
+
+body#home .nav-main li a#homenav,
+body#students .nav-main li a#studentnav,		
+body.s1 .nav-main li a#studentnav,
+body#instructors .nav-main li a#instructornav,
+body#news .nav-main li a#newsnav,
+body#skills .nav-main li a#skillsnav,
+body.s2 .nav-main li a#skillsnav,
+body#lecturers .nav-main li a#lecturersnav,
+body#about .nav-main li a#aboutnav,
+body#feedback .nav-main li a#feedbacknav {
+	color: #fff;
+} 
+
+/* To stop the items in the student dropdown menu taking on the same current effects */
+body.s1 .nav-main li li a#studentnav {
+	font-weight:normal !important;
+	text-decoration:none !important;
+} 
+
+#container {
+	width:960px;
+	background:#fff;
+	margin-left:auto;
+	margin-right:auto;
+	border-left:2px solid #5D604E;
+	border-right:2px solid #5D604E;
+	box-shadow:1px 1px 20px #000;
+}
+
+#header {
+	width:960px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#header #logo {
+    background: url("http://www.routledge.com/textbooks/9780415639989/images/banner.jpg") no-repeat left top transparent;
+    height: 244px;
+    padding-bottom: 0px;
+	margin-top: 0;
+    text-indent: -5000px;
+}
+
+#main {
+	margin-left:auto;
+	margin-right:auto;
+	padding: 30px 35px 30px;
+    width: 890px;
+}
+
+
+#footer {
+	width: 890px;
+	padding: 40px 35px;
+	margin-left:auto;
+	margin-right:auto;
+	font-size: 11px; font-size: 1.1rem;
+}
+
+#footer .wrapper .bar .pane {
+	width:50%;
+	float:left;
+}
+
+#instructors #footer {
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 0;
+    width: 940px;
+}
+
+.footernav {
+	font-size: 10px !important; font-size: 1.0rem !important;
+}
+
+#instructors #footer .c16 {
+	width:520px;
+}
+
+#instructors #footer .c8 {
+	width:400px;
+}
+
+
+/*--------------Navigation------------------*/
+
+.nav-main {
+	font-size: 16px; font-size: 1.6rem;
+	font-weight:bold;
+	padding:0;
+	margin-top:0;
+	background:#11140B;
+	border-top: 4px solid #B8BA59;
+}
+
+.nav-main a:link, .nav-main a:visited {
+    color: #BDB867;
+}
+
+.nav-main li {	
+	height: 50px;
+    padding-top: 5px;
+	text-align:center;
+	border-left:1px solid #2B331B;
+	border-right:1px solid #000000;
+	font-size: 15px;
+	font-size: 1.5rem;
+}
+
+.nav-main li ul {
+	margin-top: 0px !important;
+	padding: 10px 0 0;
+	background:#B8BA59;
+	border-bottom:1px solid #000;
+	box-shadow:none;
+}
+
+.nav-main li ul li:hover, .nav-main li ul li.sfhover  {
+	background:#000 !important;
+	color:#fff;
+}
+
+/* For when the dropdown hover colour only shows as pale yellow */
+
+/*.nav-main li ul li a:hover {			
+	color: #000;	
+} */
+
+.nav-main li li, .nav-main li li li {
+	background:none;
+	background-color:#11140B;
+	width: 263px;
+	height:30px;
+	padding:5px 0;
+	border-left: 1px solid #B8BA59;
+	border-right: 1px solid #B8BA59;
+	border-top: 1px solid #2B331B;
+}
+ 
+.nav-main li.noleft {
+	border-left:none !important;
+}
+  
+.nav-main li.noright {
+	border-right:none !important;
+}
+   
+  
+
+/*--------------Page Tab Navigation------------------*/
+
+
+/*
+.pagetabs {
+	padding-top:10px;
+}
+*/
+
+.pagetabs ul.jtabs a {
+    height: 18px !important;
+	margin-bottom: 1px;
+}
+
+
+/*
+ul.jtabs a {
+padding: 7px 10px;
+border-bottom:1px solid;
+margin-right: 7px;
+background:#4D648E !important;
+-moz-border-radius:10px !important;
+-webkit-border-radius:10px !important;
+border-radius:10px !important;
+filter:none !important;
+-ms-filter:none !important;
+text-shadow: 0 0.5px 2px #574D45;
+}
+
+.pagetabs ul.jtabs a {
+	color:#fff;
+	border-color: #DDDDDD;
+}
+
+.pagetabs ul.jtabs a.current {
+    background: none repeat scroll 0 0 #555555 !important;
+}
+
+ul.jtabs li {
+    margin: 3px 0 0;
+}
+
+ul.jtabs a {
+padding: 10px 25px;
+text-align:center;
+border-bottom:1px solid;
+}
+
+*/
+
+.pagetabs div.panes div.pane {
+	font-size:1em;
+	background:#676767;
+	padding-left:20px;
+	padding-right:20px;
+	padding-bottom: 20px;
+	color:#fff;
+	-webkit-border-radius: 20px;
+-webkit-border-top-left-radius: 0;
+-moz-border-radius: 20px;
+-moz-border-radius-topleft: 0;
+border-radius: 20px;
+border-top-left-radius: 0;
+}
+
+.pagetabs div.panes div.pane h2, .pagetabs div.panes div.pane h3, .pagetabs div.panes div.pane h4, .pagetabs div.panes div.pane h5, .pagetabs div.panes div.pane h6 {
+	color: #BFD23D;
+}
+
+.pagetabs div.panes div.pane a {
+	color:#FFB333;
+}
+
+
+/*--------------Misc------------------*/
+
+.copyright {
+	font-size: 10px !important; font-size: 1.0rem !important;
+}
+
+.normalCursor {
+	cursor:default;
+}
+
+#sharetools {
+	padding: 40px 0 0;
+}
+
+.cover {
+	float:left;
+	margin-right:40px;
+	padding-bottom:20px;
+	padding-left: 1px;
+}
+
+
+.cover img {
+	border:1px solid #000 !important;
+}
+
+.cwpurchasebox {
+	float:right;
+	padding-left:50px;
+	padding-bottom:20px;
+}
+
+.cwpurchasebox h3 {
+	padding-top:0;
+	margin-top: 0;
+}
+
+ul.cwpurchase {
+	margin-left:0 !important;
+	margin-bottom: 30px;
+}
+
+.purchasebutton {
+	background: #0099d3 url("http://www.routledge.com/textbooks/globalImages/bluegradient.jpg") repeat-x center;
+	-moz-border-radius:20px;
+	-webkit-border-radius:20px;
+	border-radius:20px;
+	list-style-type:none;
+	box-shadow: 1px 1px 2px #111111;
+	text-shadow: 1px 1px 3px #000000;
+	width: 160px;
+}
+
+.purchasebutton img {
+	position:relative;
+	padding-left:10px;
+	top:3px;
+}
+
+.purchasebutton a {
+	color:#fff !important;
+	display:block;
+	padding: 5px 30px;
+    width: 160px;
+	margin-bottom:10px;
+}
+
+.floatLeft {
+	float:left;
+}
+
+.floatRight {
+	float:right;
+}
+
+table {
+	border-collapse:collapse;
+	width:100%;
+	border:1px solid #ccc;
+	margin-bottom:25px;
+	}
+	
+th, td {
+	padding:5px;
+	border:1px solid #ccc;
+	text-align:left;
+	vertical-align:top;
+	}
+	
+.paddingtop0 {
+	padding-top:0;
+}
+
+.lightbox ul {
+	margin-left:0;
+}
+
+.cf:before, 
+.cf:after { content: "" !important; display: table !important; }
+.cf:after { clear: both !important; }
+.cf { zoom: 1; } /* For IE 6/7 (trigger hasLayout) */
+
+sup {
+position: relative;
+top: -3px;
+vertical-align: top;
+font-size: 90%;
+}
+
+
+/*--------------Over rides for Global styles------------------*/
+
+blockquote {
+    border-left:0;
+	padding-left: 25px;
+	font-size: 12px; font-size: 1.2rem;
+}
+
+.toc {
+	display:none;
+}
+
+/*--------------Headings and Text------------------*/
+
+h1 { 
+	font-size: 28px; 
+	font-size: 2.8em; 
+}
+
+h2 { 
+	font-size: 28px; 
+	font-size: 2.8rem; 
+}
+
+h3 { 
+	font-size: 22px; 
+	font-size: 2.2rem; 
+}
+
+h4 { 
+	font-size: 18px; 
+	font-size: 1.8rem; 
+}
+
+h5 { 
+	font-size: 14px; 
+	font-size: 1.4rem; 
+}
+
+h6 { 
+	font-size: 12px; 
+	font-size: 1.2rem; 
+}
+
+p, li {
+	font-size: 14px;
+	font-size: 1.4rem;
+}
+
+/*
+li li, li p { font-size: 1rem; } */
+
+h1, h2, h3, h4, h5, h6 {
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-weight:normal;
+	padding-top:20px;
+	padding-bottom: 15px;
+	border-bottom:none;
+	letter-spacing:0;
+	color:#7D8924;
+}
+
+hr, p, ul, ol, dl, pre, blockquote, address, table, form {
+    line-height: 1.6em;
+    margin-bottom: 1em;
+}
+
+#footer p, #footer li {
+    font-size: 1.1rem !important;
+}
+
+.paddingright {
+	margin-bottom: 20px;
+    margin-top: 30px;
+    padding-right: 26px;
+	list-style:none;
+}
+
+/*--------------Links------------------*/
+
+a, a:active {
+    color: #0073B0;
+}
+
+a:link {
+	color: #0073B0; 
+	text-decoration: none;}
+	
+a:visited {
+	color: #0073B0; 
+	text-decoration: none;}
+	
+a:hover {
+	color: #000;
+	text-decoration: underline;}
+
+a:active {
+	color: #0073B0;
+	text-decoration: none;}
+
+a:current {
+	color:#0073B0;
+	text-decoration:underline;
+	}	
+
+	
+/*----SIGN IN FORM----*/
+
+#signinForm {
+    width: 280px;
+	float:left;
+	background: #E1E1E1;
+	margin-right:30px;
+	margin-top:20px;
+	padding: 0 20px 20px;
+	-moz-border-radius:10px !important;
+	-webkit-border-radius:10px !important;
+	border-radius:10px !important;
+}
+
+#requestForm {
+	width:450px;
+	float:left;
+	background: #E1E1E1;
+	padding: 0 20px 20px;
+	margin-top:20px;
+	-moz-border-radius:10px !important;
+	-webkit-border-radius:10px !important;
+	border-radius:10px !important;
+}
+	
+#signinForm h2 {
+	font-size: 18px; font-size: 1.8rem;
+	}
+
+#requestForm h2 {
+	font-size: 18px; font-size: 1.8rem;
+	}
+
+#requestForm {	
+	margin-bottom:20px; }
+	
+label { 
+	clear:both; 
+	display:block; 
+	margin-bottom:10px;
+	}
+	
+label em { 
+	float:left; 
+	width:210px; 
+	}
+
+#signinForm label em { 
+	float:left; 
+	width:110px; 
+	}
+	
+label input { 
+	border:1px solid #000000; 
+	}
+	
+input { 
+	border:1px solid #666 !important;
+	background-color:#fff;
+	color:#000;
+	}
+
+input.submit { 
+	border:1px solid #666;
+	background-color:#ccc;
+	color:#000;
+	margin-left:210px;
+	padding-top:3px;
+	padding-bottom:3px;
+	}		
+		
+	
+	
+/* ---------- Feedback Form --------- */	
+
+#fdbkName {
+	border:1px solid #666;
+	background-color:#fff !important;
+	color:#000 !important;
+	clear:both;
+	display:block;
+	margin-bottom:10px;
+	}
+
+#fdbkEmail {
+	border:1px solid #666;
+	background-color:#fff !important;
+	color:#000 !important;
+	clear:both;
+	display:block;
+	margin-bottom:10px;
+	}
+
+#fdbkComment {
+	border:1px solid #666;
+	background-color:#fff !important;
+	color:#000 !important;
+	clear:both;
+	display:block;
+	margin-bottom:10px;
+	width:500px;
+	height:100px;
+	}	
+	
+.formfield textarea {
+	border:1px solid #666;
+	background-color:#fff !important;
+	color:#000 !important;
+	margin-bottom:10px;
+	}	
+	
+#fdbkForm input {
+	background-color:#ccc;
+	color:#000;
+}	
+
+h6.special {
+    border-bottom: 0;
+    border-top: 0;
+}
+
+fieldset {
+    border: 0 none;
+}
+
+/* ---------- Buy the book Tabs --------- */	
+
+#book_info {
+    background: url("http://www.routledge.com/textbooks/globalImages/book_info_tab.png") no-repeat scroll center top transparent;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 16px;
+    height: 28px;
+    margin: 0;
+    padding: 2px 0 0;
+    position: absolute;
+    right: 135px;
+    text-align: center;
+    top: 0;
+    width: 300px;
+}
+
+#book_info a {
+    color: #FFFFFF;
+    display: block;
+    font-weight: bold;
+    height: 30px;
+    padding-top: 1px;
+    text-decoration: none;
+}
+
+#book_info a:hover {
+	text-shadow: 2px 2px 4px #000;
+}
+
+#brand_tab {
+    float: left;
+    height: 40px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 150px;
+    z-index: 10000;
+}
+
+#brand_tab a {
+    background: url("http://www.routledge.com/textbooks/globalImages/routledge_logo_tab.png") no-repeat scroll 0 0 transparent;
+    height: 100%;
+    position: absolute;
+    text-indent: -10000px;
+    width: 100%;
+}
+
+.error {
+	color:#F00 !important;
+	padding-bottom:20px;
+}
+
+/* ---------- Global --------- */
+
+.pinterest {
+	background: url("http://www.routledge.com/textbooks/globalImages/pinterest.png") no-repeat scroll 0 0 transparent;
+}
